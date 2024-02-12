@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+#cal{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    background-color: rgb(2, 10, 7);
+    width: 60vw;
+    height: 60vh;
+    gap: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    
+    
+
+    
+   
+}
+#userinput{
+  grid-column-start:1 ;
+  grid-column-end: 5;
+  outline: none;
+  font-size:20px;
+  border-radius: 10px;
+  outline: none;
+  border: 2px solid plum;
+  text-align: right;
+  padding: 5px 10px;
+
+}
+button{
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 30px;
+    outline: none;
+   border: none;
+    
+}
+button:active{
+    background-color: rgb(94, 91, 91);
+}
+#find{
+    grid-column-start: 3;
+    grid-column-end: 5;
+}
+
+@media screen and (min-width:2221px){
+    #cal{
+        width: 30vw;
+        height: 60vh;
+        
+    }
+   
+}
